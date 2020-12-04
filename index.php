@@ -22,11 +22,11 @@ $url = $telegram['message']['text'];
  }else{
    
   if(filter_var($url, FILTER_VALIDATE_URL)){
-   bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'در حال آپلود فایل ...']);
+   bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'Kutib Turing... Agarda faylda xatolik bo'lsa yuklab olinmaydi']);
    if(remote_file_size($url) < 50){
     $fileName = upload($url); 
     send_file( $user_id , $fileName);
-    bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'https://YOUR_SITE.com/YourFolder/files/'.$fileName ]);
+    bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'https://saytnomi.com/faylnomi/faylurl/'.$fileName ]);
    } //آدرس پوشه ای که روی هاستتون ساختید
     
    

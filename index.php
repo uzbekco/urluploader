@@ -22,7 +22,7 @@ $url = $telegram['message']['text'];
  }else{
    
   if(filter_var($url, FILTER_VALIDATE_URL)){
-   bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'Kutib Turing... Agarda faylda xatolik bo'lsa yuklab olinmaydi']);
+   bot('sendMessage', ['chat_id'=> $user_id,'text'=> 'Kutib Turing...']);
    if(remote_file_size($url) < 50){
     $fileName = upload($url); 
     send_file( $user_id , $fileName);

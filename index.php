@@ -17,7 +17,7 @@ $url = $telegram['message']['text'];
   bot(
   'sendMessage', [
    'chat_id'=> $user_id,
-   'text'=> 'Hammaga Assolumu Aleykum Bu bot Fayl linkini yuklab beradi Kanal @Hacker_Bey Dasturchi @Shox_Xacker',
+   'text'=> '🎉Hammaga Assolumu Aleykum. Bu bot Fayl linkini yuklab beradi🙊 🌕Kanal @Hacker_Bey 👨🏻‍💻Dasturchi @Shox_Xacker',
   ]);  
  }else{
    
